@@ -1,0 +1,43 @@
+
+<div class="container">
+  <div class="row" id="divRow" *ngIf="!cdtimer.isTimeUp && !isClickedOnce">
+    <div class="col-md-12 text-center">
+      <button class="btn btn-danger" (click)="isClickedOnce = true;GetNewQuestion();cdtimer.start();">
+        Start the game!</button>
+    </div>
+  </div>
+  <div class="row fixheight" *ngIf="!cdtimer.isTimeUp">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="quizArea" *ngIf= "!loading">
+        <p class="bluebox" innerHTML="{{ data.results[0].question }} "></p>
+        <div  *ngFor="let option of answersArray; let i = index"> 
+          <input type="radio" [disabled]="result"  id="enum_{{option}}" name="enums" (change)="CheckAnswer(option);" [value]='option'>
+          <label class="blackBox" [ngClass]="(result && option === data.results[0].correct_answer)?'correct': 'incorrect'" innerHTML="{{option}}" for="enum_{{option}}" id="lbl_{{option}}"></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-3">
+        <countdown-timer #cdtimer></countdown-timer>
+    </div>
+    <div [hidden]="!isClickedOnce" class="col-md-3 large">
+      <p class="bluebox" [ngClass]="cdtimer.seconds<10? 'redbox':null">
+        00:{{('00'+cdtimer.seconds.toString()).slice(-2)}}
+      </p>
+    </div>
+    <div [hidden]="!isClickedOnce" class="col-md-3 large">
+      <p class="bluebox">${{tallyAmount}}</p>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+  <div class="row text-center" *ngIf="cdtimer.isTimeUp">
+    <div class="col-md-12">
+      <button class="btn btn-danger" *ngIf="!enableRoundTwo" (click)="enableRoundTwo = true;">
+        Move on to Round 2!</button>
+  </div>
+</div>

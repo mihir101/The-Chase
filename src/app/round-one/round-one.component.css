@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+label {
+    cursor:pointer;
+}
+
+.fixheight {
+    min-height: 210px;
+}
+
+.bg {
+    background-color: rgba(100, 100, 100, 0.5);
+        
+}
+
+.quizArea {
+    font: 20px 'Roboto Condensed', sans-serif;
+}
+
+.quizArea input {display: none;}
+
+.bluebox {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding:3px 15px 3px 30px ;
+    margin:1px;
+    background: linear-gradient(to bottom, rgba(17,65,170,1) 0%,rgba(9,67,124,1) 14%,rgba(11,57,114,1) 27%,rgba(13,66,119,1) 55%,rgba(14,60,124,1) 73%,rgba(7,33,79,1) 100%);
+    
+}
+
+.redbox {
+    background:linear-gradient(to bottom, rgba(255,119,107,1) 0%,rgba(206,12,12,1) 100%); 
+}
+
+.blackBox { 
+border: 2px solid #ccc;
+border-radius: 10px;
+padding: 3px 2px 3px 30px;
+margin:1px;
+width:100%;
+background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+font: 20px 'Roboto Condensed', sans-serif;
+}
+
+input:hover + label { 
+    background:  linear-gradient(to bottom, rgb(91, 95, 100) 0%,rgb(62, 67, 71) 36%,rgba(105,123,135,1) 100%);
+    border: 2px solid #ccc;
+}
+
+
+input:checked + label.correct {
+    background: linear-gradient(to bottom, rgb(122, 202, 125) 0%,rgb(3, 252, 36) 100%);
+}
+
+label.correct {
+    background: linear-gradient(to bottom, rgb(122, 202, 125) 0%,rgb(3, 252, 36) 100%);
+}
+
+input:checked + label.incorrect {
+    background:linear-gradient(to bottom, rgba(255,119,107,1) 0%,rgba(206,12,12,1) 100%); 
+}
+
+.large {
+    font: 25px 'Roboto Condensed', sans-serif;
+    padding: 2px;
+}

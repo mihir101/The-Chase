@@ -1,0 +1,18 @@
+h1, h3 {
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+body {
+    background: url('../assets/img/theChaseUSA.jpg');
+    color: white;
+    
+}
+
+.bg {
+    min-height:758px;
+    width:100%;
+    background-color: rgba(50,50,50,0.5);
+}
+
+
