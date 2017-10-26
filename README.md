@@ -1,14 +1,24 @@
-# MyFirstApp
+# The Online `Chase`
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
+This is web based quiz comprising of two rounds -
 
-## Development server
+In the first round, player will attempt to earn as much money as possible in a one-minute rapid fire round. For each correct answer, $5000 are added to the player's total.
+
+In second round, player will attempt to defend the money she won in round 1.
+Herein, player would be playing against the computer (playing with a 0.5 probability of getting the answer right).
+The player's goal is to answer enough questions correctly to secure the earned winnings without being caught by the computer, whose job is to catch them by capitalizing on their mistakes.
+
+Computer will start 3 steps behind the player and will move towards the player with each correct answer.
+Player will start 5 steps away from the bank and will move towards the bank with each correct answer.
+Player/Computer stays put in case of a wrong answer
+
+## Trivia Questions
+
+Open Trivia Database API - https://opentdb.com/ is the data store used for generating the questions
+
+## Running the app  - Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -22,6 +32,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Current Status
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+As of now, I have only completed round-one of the game
