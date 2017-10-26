@@ -1,10 +1,16 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 
+// @Component({
+//  selector: 'countdown-timer',
+//  template: '<div class="text-shadow text-center"><p>{{message}}</p></div>',
+//  styles: ["text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;"]
+// })
+
 @Component({
- selector: 'countdown-timer',
- template: '<div class="text-shadow text-center"><p>{{message}}</p></div>',
- styles: ["text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;"]
-})
+  selector: 'countdown-timer',
+  template: '',
+  styles: ['']
+ })
 export class CountdownTimerComponent implements OnInit, OnDestroy {
 
  intervalId = 0;

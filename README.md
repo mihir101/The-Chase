@@ -1,7 +1,9 @@
 # The Online Chase
 
-This is web based quiz comprising of two rounds -
+Hello and welcome to the Chase! There are two rounds in this quiz game. In round 1, you will play a 1-minute rapid fire round. Each correct answer will add $5000 to your winnings. In round 2, you will play against the computer to secure your winnings. You will start 5 steps away from the bank and with each correct answer you move one step closer to the bank. Computer will start 3 steps behind and will move towards you with each correct answer.It will try to chase you down before you could complete your run to the bank. Beat the computer and win this epic battle of wits and speed!
 
+## Detailed Gameplay
+This is web based quiz comprising of two rounds -
 In the first round, player will attempt to earn as much money as possible in a one-minute rapid fire round. For each correct answer, $5000 are added to the player's total.
 
 In second round, player will attempt to defend the money she won in round 1.
