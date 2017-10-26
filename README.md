@@ -1,4 +1,4 @@
-# The Online `Chase`
+# The Online Chase
 
 This is web based quiz comprising of two rounds -
 
